@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-.smurfContainer {
+.smurfCard {
   border: 1px solid white;
   color: white;
   width: 40%;
@@ -27,7 +27,7 @@ body {
   margin: 20px 20px;
 }
 
-.smurfContainer button {
+.smurfCard button {
   background: #316e92;
   border: 1px solid white;
   color: white;
@@ -38,7 +38,7 @@ body {
   outline: none;
 }
 
-.smurfContainer button:hover {
+.smurfCard button:hover {
   background: white;
   color: #316e92;
   border: 1px solid #316e92;
@@ -130,4 +130,5 @@ body {
 .form button:hover {
   background: white;
   color: #316e92;
+  border: 1px solid #316e92;
 }

@@ -52,7 +52,7 @@ const Smurf = props => {
           </form>
         </>
       ) : (
-        <div className="smurfContainer">
+        <div className="smurfCard">
           <p>Name: {props.smurf.name}</p>
           <p>Age: {props.smurf.age}</p>
           <p>Height: {props.smurf.height}</p>

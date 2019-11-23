@@ -32,7 +32,6 @@ const SmurfContextProvider = ({ children }) => {
   };
 
   //delete smurf
-
   const deleteSmurf = smurfId => {
     axios
       .delete(`http://localhost:3333/smurfs/${smurfId}`)
@@ -43,7 +42,6 @@ const SmurfContextProvider = ({ children }) => {
   };
 
   //edit smurf
-
   const editSmurf = (smurfId, smurf) => {
     axios
       .put(`http://localhost:3333/smurfs/${smurfId}`, smurf)

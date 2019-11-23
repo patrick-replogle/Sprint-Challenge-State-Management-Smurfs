@@ -18,6 +18,14 @@ body {
   margin: 0 auto;
 }
 
+.smurfListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
 .smurfCard {
   border: 1px solid white;
   color: white;
@@ -44,14 +52,45 @@ body {
   border: 1px solid #316e92;
 }
 
-.smurfListContainer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
+/* Add smurf Form styles */
+.form input {
+  border-radius: 6px;
+  padding: 10px 0;
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-top: 0;
+  margin-right: 8px;
 }
 
+.form input::placeholder {
+  color: white;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  background: #316e92;
+  border: 1px solid white;
+  color: white;
+  width: 30%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 10px 0;
+  outline: none;
+}
+
+.form button:hover {
+  background: white;
+  color: #316e92;
+  border: 1px solid #316e92;
+}
+
+/* Edit form styles */
 .editForm {
   display: flex;
   flex-direction: column;
@@ -90,45 +129,4 @@ body {
 .editForm button:hover {
   background: white;
   color: #316e92;
-}
-
-.form input {
-  border-radius: 6px;
-  padding: 10px 0;
-  width: 100%;
-  background: none;
-  border: none;
-  color: white;
-  border-bottom: 1px solid white;
-  margin-top: 0;
-  margin-right: 8px;
-}
-
-.form input::placeholder {
-  color: white;
-}
-
-.form .title-input {
-  font-size: 24px;
-}
-
-.form input:focus {
-  outline: none;
-}
-
-.form button {
-  background: #316e92;
-  border: 1px solid white;
-  color: white;
-  width: 30%;
-  padding: 10px 20px;
-  border-radius: 6px;
-  margin: 10px 0;
-  outline: none;
-}
-
-.form button:hover {
-  background: white;
-  color: #316e92;
-  border: 1px solid #316e92;
 }

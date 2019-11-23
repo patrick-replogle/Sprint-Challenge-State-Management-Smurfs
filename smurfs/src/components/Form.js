@@ -13,6 +13,7 @@ const Form = () => {
   const handleSubmit = e => {
     e.preventDefault();
     addSmurf({ ...formData, id: smurfList.length });
+    setFormData({ name: "", age: "", height: "" });
   };
 
   return (

@@ -14,6 +14,7 @@ const SmurfContextProvider = ({ children }) => {
     axios
       .get("http://localhost:3333/smurfs")
       .then(res => {
+        console.log(res.data);
         setSmurfList(res.data);
       })
       .catch(err => console.log("error fetching: ", err));
@@ -55,16 +56,16 @@ const SmurfContextProvider = ({ children }) => {
 
   return (
     <smurfContext.Provider
-      value={
-        (smurfList,
+      value={{
+        smurfList,
         setSmurfList,
         isLoading,
         isEditing,
         setIsEditing,
         addSmurf,
         deleteSmurf,
-        editSmurf)
-      }
+        editSmurf
+      }}
     >
       {children}
     </smurfContext.Provider>
